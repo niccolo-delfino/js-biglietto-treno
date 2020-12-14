@@ -6,3 +6,12 @@ console.log(eta);
 
 var prezzo = km * 0.21
 console.log(prezzo);
+
+var sconto = 'Nullo'
+console.log(sconto);
+
+if (eta <= 17) {
+  console.log(sconto = (prezzo * 20) / 100);
+} else if (eta >= 65) {
+  console.log(sconto = (prezzo * 40) / 100);
+}
