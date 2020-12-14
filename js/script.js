@@ -15,3 +15,10 @@ if (eta <= 17) {
 } else if (eta >= 65) {
   console.log(sconto = (prezzo * 40) / 100);
 }
+
+var prezzoFinale = prezzo;
+console.log(prezzoFinale);
+
+if (sconto != 'Nullo') {
+  console.log(prezzoFinale = prezzo - sconto);
+}
