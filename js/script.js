@@ -1,29 +1,33 @@
 var km = parseInt(prompt('Quanti Kilometri devi percorrere?'));
+document.getElementById('km').innerHTML += km;
 console.log(km);
-document.getElementById('km').innerHTML += km
 
 var eta = parseInt(prompt('Quanti anni hai?'));
+document.getElementById('eta').innerHTML += eta;
 console.log(eta);
-document.getElementById('eta').innerHTML += eta
 
 var prezzo = km * 0.21
+document.getElementById('prezzo').innerHTML += prezzo;
 console.log(prezzo);
-document.getElementById('prezzo').innerHTML += prezzo
 
 var sconto = 'Nullo'
-console.log(sconto);
+
 
 if (eta <= 17) {
-  console.log(sconto = (prezzo * 20) / 100);
+  sconto = (prezzo * 20) / 100;
 } else if (eta >= 65) {
-  console.log(sconto = (prezzo * 40) / 100);
+  sconto = (prezzo * 40) / 100;
 }
-document.getElementById('sconto').innerHTML += sconto
+document.getElementById('sconto').innerHTML += sconto;
+console.log(sconto);
 
 var prezzoFinale = prezzo;
-console.log(prezzoFinale);
 
 if (sconto != 'Nullo') {
-  console.log(prezzoFinale += prezzo - sconto);
+  prezzoFinale = prezzo - sconto;
 }
-document.getElementById('prezzoFinale').innerHTML += prezzoFinale
+console.log(prezzoFinale);
+
+var arrotondato = prezzoFinale.toFixed(2)
+document.getElementById('prezzoFinale').innerHTML += arrotondato;
+console.log(arrotondato);
